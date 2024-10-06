@@ -6,7 +6,7 @@ import Bank.Domain.Account.TerminalAccount;
 
 public class Program {
 
-    public static void main(String [] args){
+    public static void main(String [] args) throws Exception{
 
         Scanner sc = new Scanner (System.in);
         TerminalAccount Account = new TerminalAccount();
