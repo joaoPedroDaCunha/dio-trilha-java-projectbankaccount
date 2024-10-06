@@ -36,6 +36,16 @@ public class TerminalAccount {
         this.number = number;
     }
 
+    public void withdraw(float sake){
+        if(this.balance < sake){
+            System.out.println("Valor invalido! Voce possui R$"+balance+" disponivel para saque");
+        }else{
+            this.balance -= sake;
+        }
+    }
+    public void deposit(float deposited){
+        this.balance += deposited;
+    }
     public String toString(){
         return "Olá "+customerName+", obrigado por criar uma conta no nosso banco, sua agencia é "+agency+", conta "+number+" e seu saldo "+balance+" ja esta disponivel para saque.";
     }
